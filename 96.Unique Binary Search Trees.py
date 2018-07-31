@@ -4,16 +4,15 @@ class Solution:
         :type n: int
         :rtype: int
         """
-        result = [1,1]
+        result = [1, 1]
         if n == 0 or n == 1:
             return 1
-        else :
-            l = len(result)
-            for j in range(n-2):
-                for i in range(l):
-                    result[l] += resutl[l-1-i] +result[i]
-                
-                return result
-
-x=Solution()
-print(x.numTrees(19))
+        else:
+            for j in range(n-1):
+                result.append(0)
+                for i in range(j+2):
+                    result[j+2] += result[j+1-i] * result[i]
+            return result[j+2]
+            
+x = Solution()
+print(x.numTrees(4))
