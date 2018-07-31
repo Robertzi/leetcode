@@ -24,17 +24,3 @@ class Solution:
             return self.checkTree(node.left, min, node.val) and self.checkTree(node.right, node.val, max)
         else :
             return False
-
-
-
-
-
-
-
-
-n6 = TreeNode()
-n5 = TreeNode()
-n4 = TreeNode()
-n3 = TreeNode()
-n2 = TreeNode()
-n1 = TreeNode()
