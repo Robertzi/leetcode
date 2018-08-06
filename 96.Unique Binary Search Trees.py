@@ -13,6 +13,3 @@ class Solution:
                 for i in range(j+2):
                     result[j+2] += result[j+1-i] * result[i]
             return result[j+2]
-            
-x = Solution()
-print(x.numTrees(4))

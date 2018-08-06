@@ -16,6 +16,3 @@ class Solution:
             else:
                 left = mid + 1
         return -1
-
-x = Solution()
-print(x.search([3,0,1,2], 3))

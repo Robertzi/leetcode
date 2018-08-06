@@ -1,11 +1,8 @@
 # Definition for singly-linked list.
-class ListNode:
-    def __init__(self, x, nextone):
-        self.val = x
-        if(nextone):
-            self.next = nextone
-        else:
-            self.next = None
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
 
 class Solution:
     def reorderList(self, head):
@@ -33,15 +30,4 @@ class Solution:
             switch *=-1
         if(hasattr(p,'next')):
             p.next = None
-x = Solution()
-l5 = ListNode(5 ,None)
-l4 = ListNode(4 ,l5)
-l3 = ListNode(3 ,l4)
-l2 = ListNode(2 ,l3)
-l1 = ListNode(1 ,l2)
-x.reorderList(l1)
-node = l1
-while node:
-    print(node.val)
-    node = node.next
         
