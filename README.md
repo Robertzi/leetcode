@@ -1,6 +1,3 @@
-# leetcode algorithms in Python
-start on 28th july
+# leetcode algorithms
 
-to be solved:
-
-818
+to be solved: 818
